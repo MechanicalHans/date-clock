@@ -1,0 +1,17 @@
+[package]
+name = "date_clock"
+version = "0.1.0"
+edition = "2021"
+license = "AGPL-3.0-or-later"
+
+[profile.release]
+opt-level = "z"
+lto = true
+
+[dependencies.chrono]
+version = "0.4.31"
+default-features = false
+features = ["clock"]
+
+[dependencies.fcla]
+version = "0.1.0"
